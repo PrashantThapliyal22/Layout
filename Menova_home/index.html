@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Menova Layout</title>
+</head>
+<body>
+    
+<!-- header section started -->
+
+<div class="flex head mt-3 justify-between mx-auto max-w-[1320px] ">
+
+    <div>
+        <img src="images/logo.png" alt="">
+
+    </div>
+
+
+    <div class="flex gap-8">
+
+<div class="flex gap-3">
+    <i class="fa-solid fa-phone"></i>
+    <div>
+        
+        <p>Call us</p>
+    <span>(303) 652-2500</span>
+    </div>
+        
+</div>
+<div class="flex gap-3">
+    <i class="fa-solid fa-envelope"></i>
+   <div>
+
+       <p>email to</p>
+       <span>info@themeis.com</span>
+   </div>
+</div>
+<div class="flex gap-3">
+    <i class="fa-solid fa-location-dot"></i>
+ <div>
+
+     <p>location</p>
+     <span>California,USA</span>
+ </div>
+</div>
+
+    </div>
+</div>
+
+<div class="r">
+    <hr>
+</div>
+
+
+
+<!-- nav bar for full width -->
+
+<div class="flex max-w-[1320px] nav1 mx-auto justify-between">
+
+    <div class="flex gap-8">
+  <p>Home</p>
+  <p>About</p>
+  <p>Service</p>
+  <p>Blog</p>
+  <p>Blog-Single</p>
+  <p>Contact</p>
+  <!-- <p>/+</p> -->
+
+    </div>
+
+<div>
+    <button>Make Appointment +</button>
+</div>
+</div>
+
+
+
+
+
+<!-- navbar for mobile -->
+
+<nav class="bg-white border-gray-200 mobnav py-2.5 dark:bg-gray-900">
+    <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+        <a href="#" class="flex items-center">
+            <img src="images/logo.png" class="h-6 mr-3 sm:h-9" alt="Landwind Logo">
+            <!-- <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Landwind</span> -->
+        </a>
+        <div class="flex items-center lg:order-2">
+            <div class="hidden mt-2 mr-4 sm:inline-block">
+                <span></span>
+            </div>
+
+            <!-- <a href="https://themesberg.com/product/tailwind-css/landing-page" -->
+                 <!-- class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800"></a>  -->
+            <button data-collapse-toggle="mobile-menu-2" type="button"
+				class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+				aria-controls="mobile-menu-2" aria-expanded="true">
+				<span class="sr-only">Open main menu</span>
+				<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd"
+						d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+						clip-rule="evenodd"></path>
+				</svg>
+				<svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd"
+						d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+						clip-rule="evenodd"></path>
+				</svg>
+			</button>
+        </div>
+        <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+            <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white"
+                        aria-current="page">Home</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Company</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Marketplace</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Features</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Team</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- banner section started -->
+
+<div class="banner mt-4">
+
+<div class="bannercont max-w-[1100px] mx-auto">
+
+
+    <div class="bannercont">
+
+        <h2>Motivation for the good life</h2>
+        <h1>Bringing the future of healthcare</h1>
+        
+        <a href=""><button>Our Service +</button></a>
+        <a href=""><button>Learn More +</button></a>
+    </div>
+</div>
+
+
+
+</div>
+
+<!-- feature section started -->
+
+<div class="feature text-center mt-10">
+    <h3 class="text-3xl font-medium">Awesome Feature</h3>
+
+
+  <h2 class="text-6xl font-bold mt-4">Excellence is Our Speciality</h2>
+
+
+<div class="cards sm:text-center mt-10">
+
+
+    <div class="grid max-w-[1100px] gap-5  mx-auto md:grid-cols-3 sm:grid-cols-1">
+
+        
+        <div class="mb-6 p-6  border card1 border-gray-200 rounded-lg shadow dark:border-gray-700">
+          
+          <div class="imgs">
+              <img src="images/1.png" alt="">
+
+          </div>
+             <div class="mt-6 ">
+                <h4 class="md:text-left sm:text-center">Dedicated Doctor</h4>
+            
+                <p class="md:text-left sm:text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti magnam quia minus, at nostrum culpa reiciendis, enim natus cumque alias quas ex ab autem qui!</p>
+            </div>
+
+
+        </div>
+           
+
+        
+
+<div class="max-w-sm p-6   mb-6 card1 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div class="imgs">
+        <img src="images/2.png" alt="">
+
+    </div>
+    <div class="mt-6 ">
+        <h4 class="md:text-left sm:text-center">Dedicated Doctor</h4>
+    
+        <p class="md:text-left sm:text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti magnam quia minus, at nostrum culpa reiciendis, enim natus cumque alias quas ex ab autem qui!</p>
+    </div>
+
+</div>
+
+
+
+
+<div class="max-w-sm p-6 card1 mb-6 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div class="imgs">
+        <img src="images/3.png" alt="">
+
+    </div>
+    <div class="mt-6 ">
+        <h4 class="md:text-left sm:text-center">Dedicated Doctor</h4>
+    
+        <p class="md:text-left sm:text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti magnam quia minus, at nostrum culpa reiciendis, enim natus cumque alias quas ex ab autem qui!</p>
+    </div>
+
+</div>
+
+    </div>
+
+</div>
+
+
+</div>
+
+<!-- about section dtarted -->
+
+
+
+<div class="about max-w-[1100px] gap-8 mb-16 mt-16 mx-auto grid md:grid-cols-2 sm:grid-cols-1">
+    <div>
+<img src="images/1.jpg" alt="">
+    </div>
+    <div>
+   <h4>About Menova</h4>
+   <h1 class="">Progressive Care With in Compassion</h1>
+
+   <p class="mt-4">Lorem, ipsum dolor  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laborum! sit amet consectetur adipisicing elit. Accusantium saepe minima dolor officia, veritatis, porro distinctio illo neque, repellendus maxime explicabo dicta praesentium itaque excepturi et quam quod corrupti ea!</p>
+  <p class="mt-4"><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+  <p class="mt-3"><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+  
+  
+  <button class="mt-5">Read More +</button>
+</div>
+
+
+
+
+</div>
+
+
+
+<!-- services section started -->
+<div class="servicescol pb-28">
+
+<div class="services pt-20 mx-auto  max-w-[1100px] text-center">
+   
+<h1 class="text-2xl font-medium">Our Services</h1>
+<p class=" mt-3  font-semibold text-5xl">Reliable Medical Services</p>
+
+
+
+<div class="grid md:grid-cols-3 gap-8 serv sm:ms-5 sm:grid-cols-1 mt-20">
+     
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="rounded-t-lg" src="images/1 (1).jpg" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+        </a>
+   
+    </div>
+</div>
+
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="rounded-t-lg" src="images/2.jpg" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+        </a>
+       
+    </div>
+</div>
+
+
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="rounded-t-lg" src="images/3.jpg" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+        </a>
+       
+    </div>
+</div>
+
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="rounded-t-lg" src="images/4.jpg" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+        </a>
+   
+    </div>
+</div>
+
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="rounded-t-lg" src="images/5.jpg" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+        </a>
+
+    </div>
+</div>
+
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="rounded-t-lg" src="images/6.jpg" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+        </a>
+      
+    </div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+<!-- rating section started -->
+
+<div class="rating">
+
+    <div class="max-w-[1100px] grid md:grid-cols-4 pt-14 pb-16 sm:grid-cols-1 mx-auto">
+
+
+        <div class="text-center">
+            <p class="mb-4">1<span>81</span>3</p>
+
+            <span class="text-3xl ">Expert Doctor</span>
+        </div>
+
+
+<div class="text-center">
+    <p class="mb-4">4<span>28</span>7</p>
+    <span class="text-3xl">Appointment</span>
+</div>
+<div class="text-center">
+    <p class="mb-4">2<span>81</span>03</p>
+    <span class="text-3xl">Satisified patient</span>
+</div>
+<div class="text-center">
+    <p class="mb-4"><span>33</span></p>
+
+    <span class="text-3xl">Award Winnin</span>
+</div>
+    </div>
+
+</div>
+
+<!-- team meber section started -->
+
+
+<div class="specialist mb-20">
+
+    <div class="grid max-w-[1100px] gap-10 mx-auto grid md:grid-cols-2 sm:grid-cols-1">
+<div  class="mt-36">
+<h2 class="text-2xl font-medium" >Our Specialist</h2>
+<h1 class="text-5xl mt-5 font-semibold" style="line-height: 3.9rem;">Meet Our Specialist Doctors Team</h1>
+
+<p class="mt-14" style="line-height: 1.9rem; color: rgb(57, 53, 53);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim consequatur cumque facere delectus veniam error necessitatibus repudiandae sit nesciunt, tempora eius pariatur, ex voluptates ea eum sunt autem commodi. Nemo doloribus dolor modi itaque eos?</p>
+<button class="mt-12">More Doctors +</button>
+</div>
+
+<div class="grid md:grid-cols-2 gap-8 mt-28 sm:grid-cols-1">
+
+    <div>
+        <img src="images/1 (2).jpg" alt="">
+    </div>
+
+    <div>
+        <img src="images/2 (1).jpg" alt="">
+    </div>
+<div>
+    <img src="images/3 (1).jpg" alt="">
+</div>
+
+<div>
+    <img src="images/4 (1).jpg" alt="">
+</div>
+
+</div>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- form section satrted -->
+
+<div class="pt-24 pb-20 form">
+
+
+<div class="mx-auto max-w-[1100px]"> 
+   
+   <div class="grid md:grid-cols-2 sm:grid-cols-1">
+
+       
+       <div class="max-w-sm">
+           <form class=" frm shadow-md rounded px-8 pt-6 pb-8 mb-4">
+               <label for="" class="text-3xl font-semibold">Make An Appointment</label>
+               <div class=" mt-5 mb-4">
+                   
+                   <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Your Name">
+                </div>
+                <div class="mb-4">
+                    
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Phone Number">
+                </div>
+          <div class="mb-4">
+              <textarea name=""  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  id="" cols="30" placeholder="Your Message" rows="6"></textarea>  
+        
+        </div>
+        <div class="text-center">
+
+            <button class="">Appointment Now +</button>
+        </div>
+    </form>
+    
+</div>
+
+<div>
+<h4 class="text-2xl">Why Choose us</h4>
+<h1 class="text-6xl mt-5">Bringing the future of healthcare</h1>
+
+
+<p class="mt-8 text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint ab voluptatibus, voluptate cum provident non amet in necessitatibus voluptatem atque? Minus officia laudantium soluta, assumenda possimus ex dolor sapiente quidem vero voluptate, hic totam ipsa!</p>
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+</div>
+
+<!-- testimonial section started -->
+<div class="mx-auto  mb-20 max-w-[1100px] mt-16 ">
+    <h5 class="text-xl text-center font-medium">Testimonial</h5>
+
+    <h2 class="text-5xl text-center font-semibold mt-4">Happy Patient Says</h2>
+
+
+    <div class="grid md:grid-cols-2 mt-16 sm:grid-cols-1">
+<div class="ing">
+    <img src="images/1 (3).jpg" alt="">
+
+</div>
+
+<div class="ps-12 pt-24 quote">
+<span>
+    <i class="fa-solid fa-quote-left"></i>
+</span>
+
+
+<p class="pt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo nisi cumque, iusto, repellendus minima ratione tempore, numquam ducimus laboriosam nesciunt quibusdam maiores quis ipsam? Quod tempora laudantium perferendis non illo quis repellendus aliquam magnam?</p>
+  
+<h4 class="text-2xl font-semibold mt-8">Malbel lamisha</h4>
+<h2 class="text-l font-medium mt-4">CEO, Dreamlane</h2>
+<!-- <</h3> -->
+</div>
+
+    </div>
+</div>
+
+<!-- emergency section  -->
+<div class="emergency">
+
+<div class="mx-auto pt-16 text-center max-w-[1100px]">
+<h4 class="text-4xl mb-5 font-semibold ">Emergnecy Contact Us</h4>
+<span class="">Call Now: +01(632) 6325</span>
+
+
+<!-- <> -->
+
+    <div class="grid mt-14 md:grid-cols-3 mx-auto sm:grid-cols-1 max-w-[600px]">
+        <div><input type="text" placeholder="Your Name"></div>
+        <div><input type="text" placeholder="Email Address"></div>
+        <div>
+            <input type="text" placeholder="Phone Number">
+        </div>
+    <!-- </div> -->
+</div>
+<button class="mb-8">Appointment Now +</button>
+</div>
+
+</div>
+
+<!-- carousel -->
+
+
+<div class="caro">
+     <div class=" pt-14 pb-14 mx-auto max-w-[1100px]">
+      <!-- <img src="" alt =""> -->
+
+      <div class="grid gap-20 md:grid-cols-4 mx-auto ">
+        <img src="images/4 (1).png" alt="">
+        <img src="images/5.png" alt="">
+        <img src="images/4 (1).png" alt="">
+        <img src="images/5.png" alt="">
+      </div>
+     </div>
+</div>
+
+
+
+
+<!-- new section started -->
+
+<div class="footer pt-20">
+    <div class="max-w-[1320px] mb-12 gap-12 fot1 grid mx-auto md:grid-cols-3 sm:grid-cols-1">
+      <div>
+        <img src="images/logo.png" alt="">
+      </div>
+  
+      <div class="grid md:grid-cols-6 sm:grid-cols-1">
+        <p>Home</p>
+        <p>About</p>
+        <p>Service</p>
+        <p>Blog</p>
+        <p>Single</p>
+        <p>Contact</p>
+      </div>
+  
+      <div class="flex in  gap-8 md:ms-32">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+    </div>
+    <hr>
+
+
+    <div class="info mt-16 pb-20 max-w-[1320px] mx-auto grid md:grid-cols-4 sm:grid-cols-1">
+
+
+        <div>
+            <h2>About Us</h2>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam minus culpa quasi placeat officiis repudiandae omnis cumque sint quae beatae, enim architecto qui, magnam rerum accusamus cum fugit illum dolore voluptatem veritatis consectetur excepturi accusantium.</p>
+        </div>
+
+
+
+        <div>
+            <h2>Contact Info</h2>
+            <p>32/A ,Barmingham Street</p>
+            <p>London,England</p>
+            <p><strong>Phone:</strong> 305 (365)2653</p>
+            <p><strong>Email:</strong> info@themis.com</p>
+            <p><strong>Web:</strong>www.themesis.com</p>
+        </div>
+
+
+
+        <div>
+            <h2>Services</h2>
+            <p>Cardia Surgery</p>
+        
+            <p>Dental Service</p>
+            <p>Health Check</p>
+            <p>Psycho Therapy</p>
+            <p>Skin Care</p>
+            <p>Physicak Service</p>
+        </div>
+
+
+        <div>
+            <h2>Newsletter</h2>
+ <input type="text" placeholder="Enter Email" class="mt-5 py-3 ps-4 w-[250px]"><br>
+<button class="mt-10">Subscribe Now +</button>
+</div>
+    </div>
+
+  </div>
+
+
+<!-- last section -->
+  <div class="last pt-8 pb-10">
+<div class="mx-auto cop max-w-[1320px] flex md:flex-row justify-between ">
+
+    <div>
+<p>Copyright &copy 2020 Themeies.com All rights reseved</p>
+    </div>
+
+
+<div class="flex md:flex-row  gap-8">
+    <p>Sitemap</p>
+    <p>Terms & Condition </p>
+    <p>Privacy Policy</p>
+</div>
+
+</div>
+
+
+
+  </div>
+  
+<script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+
+
+
+
+
+</body>
+</html>
